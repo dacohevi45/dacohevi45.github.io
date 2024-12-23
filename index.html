@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquetitectura de html</title>
+</head>
+<body>
+    <!--encabezado-->
+    <header><img src="codigo.png" alt="logo corporativo"></header>
+
+    <!--barra de navegacion-->
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Sobre nosotros">Sobre nosotros</a></li>
+            <li><a href="#Formulario-1">formulario</a></li>
+        </ul>
+    </nav>
+
+    <!--seccion de contenido-->
+    <section id="primero">
+        <h1>¿Que realizamos?</h1>
+        <dl>
+            <dt>Páginas web:</dt>
+            <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, autem. Vel voluptates quo ex! Numquam sequi facilis labore distinctio, expedita sit et natus. Corrupti reiciendis vitae, qui sit eveniet veniam.</dd>
+            <br>
+            <dt>Diseño responsivo</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, maxime temporibus ullam animi reprehenderit voluptatem architecto quae perspiciatis impedit adipisci nulla, eum porro velit ducimus ipsam? Autem qui laborum id?</dd>
+        </dl>
+    </section>
+
+    <section id="segundo">
+        <h2>Nuestra historia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi doloremque perspiciatis possimus veniam at optio? Sunt quasi incidunt, fugiat aliquam tempore inventore, vel molestiae animi, nisi officiis maiores nostrum.</p>
+
+        <hr />
+
+        <h2>¿Por qué me gusta la programación?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam totam consequatur corporis accusamus rem dolorum quis. Exercitationem, ut? Consequatur reprehenderit magni in, dolorum ut minus inventore sit sunt quia.</p>
+        <ol>
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+        </ol>
+
+        <hr>
+        <!--noticia con el elemento menu y div-->
+        <div class="noticia">
+            <h2><strong>Salario minimo en colombia</strong></h2>
+            <img src="lento.png" alt="imagen de envio">
+            <menu>
+              <li><button id="save"><a href="https://www.infobae.com/colombia/2024/12/23/salario-minimo-2025-centrales-obreras-aseguran-que-el-gobierno-lo-definira-por-decreto-y-exministro-de-hacienda-revelo-cual-seria-la-cifra/">Seguir esta noticia</a></button></li>
+            </menu>
+          </div>
+    </section>
+
+    <section id="tercero">
+        <p><cite>Sócrates</cite> dijo: "...solo sé que nada sé"</p>
+        <hr>
+        <p>Hoy es <time datetime="23/12/2024">23 de diciembre del 2024</time> en colombia y lo estoy realizando esto a las <time datetime="16:33">16:33</time> de la tarde</p>
+        <iframe src="https://giphy.com/embed/tHIRLHtNwxpjIFqPdV" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/justin-raccoon-pedro-tHIRLHtNwxpjIFqPdV">via GIPHY</a></p>
+    </section>
+
+        <!--contenido que puede interesar-->
+        <aside>
+            <h2>Mira tambien</h2>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </aside>
+
+<!--realizacion de tablas :)-->
+    <section class="tablas">
+        <table border="1">
+            <caption>lenguajes de programación que me voy a aprender</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Lenguaje</th>
+                    <th scope="col">Realizado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">HTML</th>
+                    <td>si</td>
+                </tr>
+                <tr>
+                    <th scope="row">CSS</th>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th scope="row">JS</th>
+                    <td>no</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>1</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <thead>
+               <tr>
+                  <th rowspan="2">Metas</th>
+                  <th colspan="3">Dificultad</th>
+               </tr>
+               <tr>
+                  <th>Fácil</th>
+                  <th>Medio</th>
+                  <th>Dificil</th>
+               </tr>
+            </thead>
+            <tr>
+               <th>HTML</th>
+               <td>yes</td>
+               <td>Yes</td>
+               <td>-</td>
+            </tr>
+            <tr>
+               <th>CSS</th>
+               <td>yes</td>
+               <td>Yes</td>
+               <td>Yes</td>
+            </tr>
+            <tr>
+               <th>JS</th>
+               <td>Yes</td>
+               <td>Yes</td>
+               <td>Yes</td>
+            </tr>
+         </table>
+    </section>
+
+<!--creacion de un formulario-->
+    <section class="formulario">
+        <form action="#">
+            <p>Por favor llena los siguientes datos</p>
+
+            <label for="1nombre">Nombre</label>
+            <input type="text" id="1nombre" name="Nombre">
+            <label for="1apellido">Apellido</label>
+            <input type="text" id="1apellido" name="Apellido">
+            <br>
+            <label for="1-direccion">Direccion</label>
+            <input type="text" id="1-direccion" name="Direccion">
+            <label for="1-contact">Número de contacto</label>
+            <input type="text" id="1-contact" name="Número de contacto">
+            <label for="1-correo">Correo electrónico</label>
+            <input type="text" id="1-correo" name="Correo electrónico">
+            <input type="submit" value="submit">
+        </form>
+    </section>
+
+    <!--barra final-->
+    <footer>
+        <h3>Sigueme en mis redes sociales</h3>
+        <a href="https://github.com/dacohevi45"><img src="git.jpg" alt="logo de GitHub"><p>GitHub</p></a>
+        <a href="https://www.linkedin.com/in/david-correa-herrera-59a134191/"><img src="link.jpg" alt="logo de linkedin"><p>Linkeding</p></a>
+    </footer>
+</body>
+</html>
