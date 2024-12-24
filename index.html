@@ -7,7 +7,7 @@
 </head>
 <body>
     <!--encabezado-->
-    <header><img src="codigo.png" alt="logo corporativo"></header>
+    <header id="encabezado"><img src="codigo.png" alt="logo corporativo"></header>
 
     <!--barra de navegacion-->
     <nav>
@@ -19,7 +19,7 @@
     </nav>
 
     <!--seccion de contenido-->
-    <section id="primero">
+    <section class="primero">
         <h1>¿Que realizamos?</h1>
         <dl>
             <dt>Páginas web:</dt>
@@ -30,7 +30,7 @@
         </dl>
     </section>
 
-    <section id="segundo">
+    <section class="segundo">
         <h2>Nuestra historia</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi doloremque perspiciatis possimus veniam at optio? Sunt quasi incidunt, fugiat aliquam tempore inventore, vel molestiae animi, nisi officiis maiores nostrum.</p>
 
@@ -46,7 +46,7 @@
 
         <hr>
         <!--noticia con el elemento menu y div-->
-        <div class="noticia">
+        <div id="noticia">
             <h2><strong>Salario minimo en colombia</strong></h2>
             <img src="lento.png" alt="imagen de envio">
             <menu>
@@ -55,15 +55,15 @@
           </div>
     </section>
 
-    <section id="tercero">
+    <section class="tercero">
         <p><cite>Sócrates</cite> dijo: "...solo sé que nada sé"</p>
         <hr>
         <p>Hoy es <time datetime="23/12/2024">23 de diciembre del 2024</time> en colombia y lo estoy realizando esto a las <time datetime="16:33">16:33</time> de la tarde</p>
-        <iframe src="https://giphy.com/embed/tHIRLHtNwxpjIFqPdV" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/justin-raccoon-pedro-tHIRLHtNwxpjIFqPdV">via GIPHY</a></p>
+        <iframe src="https://giphy.com/embed/tHIRLHtNwxpjIFqPdV" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/justin-raccoon-pedro-tHIRLHtNwxpjIFqPdV"></a>
     </section>
 
         <!--contenido que puede interesar-->
-        <aside>
+        <aside id="aside">
             <h2>Mira tambien</h2>
             <ul>
                 <li><a href="#">HTML</a></li>
@@ -160,10 +160,11 @@
     </section>
 
     <!--barra final-->
-    <footer>
+    <footer id="footer">
         <h3>Sigueme en mis redes sociales</h3>
         <a href="https://github.com/dacohevi45"><img src="git.jpg" alt="logo de GitHub"><p>GitHub</p></a>
         <a href="https://www.linkedin.com/in/david-correa-herrera-59a134191/"><img src="link.jpg" alt="logo de linkedin"><p>Linkeding</p></a>
+        <img src="" alt="">
     </footer>
 </body>
 </html>
